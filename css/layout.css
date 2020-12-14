@@ -200,8 +200,6 @@ ul#nav li.current a { color: black; }
    overflow: hidden;
 }
 
-#about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #424242; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -220,24 +218,34 @@ ul#nav li.current a { color: black; }
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
-#about .download {
-   width: 58.33333%;
-   padding-top: 6px;
-}
+
 #about .main-col { padding-right: 5%; }
-#about .download .button {
-   margin-top: 6px;
-   background: #444;
-}
-#about .download .button:hover {
-   background: #fff;
-   color: #2B2B2B;
-}
-#about .download .button i {
-   margin-right: 15px;
-   font-size: 20px;
+
+.resume-download .resume-button {
+   background-color: rgba(255, 255, 255, 0.452);
+   width: 100%;
+   color: gray;
+   text-align: center;
+   font-size: 10px;
+   padding: 10px 10px 10px 10px;
+   border-radius: 5px;
 }
 
+.resume-download .resume-button:hover {
+   background-color: white;
+   color: black;
+}
+
+.resume-download .resume-button i {
+   padding-right: 10px;
+}
+
+#about-side {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
