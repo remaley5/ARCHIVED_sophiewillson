@@ -101,13 +101,13 @@ header .social li {
 }
 header .social li a {
    color:white;
-   background-color: #095153;
+   background-color: #0e2359;
    padding: .2em .5em;
    border-radius: 50%;
    box-shadow: 0 0 6px gray;
 }
 header .social li a:hover { 
-   color: #095153; 
+   color: #0e2359; 
    background-color: white;
 }
 
@@ -133,7 +133,7 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #464646; }
 
-/* primary navigation
+/* Main Navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
@@ -144,15 +144,16 @@ header .scrolldown a:hover { color: #464646; }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
+   font: 30px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 100;
    position: fixed;
    left: 0;
    top: 0;
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 .opaque { background-color: rgba(255, 255, 255, 0.726); }
 
@@ -192,11 +193,12 @@ ul#main-nav li a {
 	transition: color .2s ease-in-out;
 }
 
-ul#main-nav li a:active { 
-   background-color: transparent !important; 
+ul#main-nav li a:hover { 
+   border-bottom: 5px solid !important; 
 }
 ul#main-nav li.current a { 
    color: black; 
+   border-bottom: 5px solid !important;
 }
 
 
@@ -1048,7 +1050,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #095153;
+    color: #0e2359;
 }
 footer .copyright  li:first-child:before {
     display: none;
