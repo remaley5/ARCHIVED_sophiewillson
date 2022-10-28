@@ -1,0 +1,7 @@
+/* Accessibility */
+
+a:focus, button:focus {
+    border: 5px solid !important;
+    border-color: red;
+    padding: 5px;
+}

@@ -152,14 +152,14 @@ header .scrolldown a:hover { color: #464646; }
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
 
-ul#nav {
+ul#main-nav{
    min-height: 48px;
    width: auto;
 
    /* center align the menu */
    text-align: center;
 }
-ul#nav li {
+ul#main-nav li {
    position: relative;
    list-style: none;
    height: 48px;
@@ -167,7 +167,7 @@ ul#nav li {
 }
 
 /* Links */
-ul#nav li a {
+ul#main-nav li a {
 
 /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
@@ -185,8 +185,8 @@ ul#nav li a {
 	transition: color .2s ease-in-out;
 }
 
-ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: black; }
+ul#main-nav li a:active { background-color: transparent !important; }
+ul#main-nav li.current a { color: black; }
 
 
 /* ------------------------------------------------------------------ */
