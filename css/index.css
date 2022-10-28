@@ -1,7 +1,17 @@
 /* Accessibility */
 
+a.skip-link {
+    opacity: 0;
+}
+
+a.skip-link:focus {
+    opacity: 100;
+}
+
 a:focus, button:focus {
     border: 5px solid !important;
     border-color: red;
     padding: 5px;
+    border-radius: 5%;
 }
+
