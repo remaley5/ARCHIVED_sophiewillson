@@ -93,29 +93,6 @@ q:before, q:after {
    content: none;
 }
 
-ins {
-   background-color: #ff9;
-   color: #000;
-   text-decoration: none;
-}
-
-mark {
-   background-color: #A7F4F6;
-   color: #555;
-}
-
-del { text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-   border-bottom: 1px dotted;
-   cursor: help;
-}
-
-table {
-   border-collapse: collapse;
-   border-spacing: 0;
-}
-
 
 /* ------------------------------------------------------------------ */
 /* c. Default and Basic Styles
@@ -795,8 +772,12 @@ properly.
 .add-bottom { margin-bottom: 24px !important; }
 .no-border { border: none; }
 
-.text-center  { text-align: center !important; }
-.text-left    { text-align: left !important; }
+.text-center  { 
+   text-align: center !important; 
+}
+.text-left    { 
+   text-align: left !important; 
+}
 .text-right   { text-align: right !important; }
 .pull-left    { float: left !important; }
 .pull-right   { float: right !important; }

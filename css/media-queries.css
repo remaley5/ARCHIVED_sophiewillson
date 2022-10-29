@@ -10,15 +10,11 @@
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
-
-    /* header styles
-   ------------------------------------------------------------------ */
    header .banner-text h1 {
       font: 80px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
    }
-
 }
 
 /* screenwidth less than 900px
@@ -27,25 +23,19 @@
 
     /* header styles
    ------------------------------------------------------------------ */
-   header .banner { padding-bottom: 12px; }
+   header .banner { 
+      padding-bottom: 12px; 
+   }
    header .banner-text h1 {
       font: 78px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;
    }
-   header .banner-text h3 {
-      font: 17px/1.9em 'librebaskerville-regular', serif;
-      width: 80%;
-   }
-   header .banner-text hr {
-      width: 65%;
-      margin: 12px auto;
-   }
+
    /* nav-wrap */
    #nav-wrap {
-      font: 11px 'opensans-bold', sans-serif;
+      font: 20px 'opensans-bold', sans-serif;
       letter-spacing: 1.5px;
    }
-
 
    /* About Section
    ------------------------------------------------------------------- */
@@ -87,9 +77,11 @@
       font-size: 66px;
       line-height: 66px;
    }
-   #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
-
+   #contact .section-head p.lead { 
+      font: 17px/33px opensans-light, 
+      sans-serif; 
+   }
 }
 
 /* mobile wide/smaller tablets
@@ -108,6 +100,7 @@
       top: 0;
       right: 0;
    }
+   
    #nav-wrap > a {
 	   width: 48px;
 		height: 48px;
