@@ -22,8 +22,14 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { 
+   background: #0f0f0f; 
+   display: flex;
+}
 
+#container {
+   width:100%;
+}
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -32,7 +38,6 @@ header {
    position: relative;
    height: 800px;
    min-height: 500px;
-   width: 100%;
    background: #16141571 url(../images/pond-landscape.jpeg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
@@ -40,13 +45,6 @@ header {
    overflow: hidden;
 }
 
-/* vertically center banner section */
-header:before {
-   content: '';
-   display: inline-block;
-   vertical-align: middle;
-   height: 100%;
-}
 header .banner {
    display: inline-block;
    vertical-align: middle;
@@ -135,27 +133,16 @@ header .scrolldown a:hover { color: #464646; } */
 
 /* Main Navigation
 --------------------------------------------------------------------- */
-#nav-wrap ul, #nav-wrap li, #nav-wrap a {
-	 margin: 0;
-	 padding: 0;
-	 border: none;
-	 outline: none;
-}
 
 /* nav-wrap */
 #nav-wrap {
    font: 30px 'opensans-bold', sans-serif;
-   width: 100%;
+   width: 300px;
    text-transform: uppercase;
    letter-spacing: 2.5px;
-   margin: 0 auto;
-   position: absolute;
-   left: 0;
-   top: 0;
-   padding-top: 30px;
-   padding-bottom: 30px;
    background-color: rgba(255, 255, 255, 0.891);
    z-index: 1000;
+   padding-top:40px;
 }
 .opaque { 
    background-color: rgba(255, 255, 255, 0.726); 
@@ -168,10 +155,13 @@ header .scrolldown a:hover { color: #464646; } */
 
 ul#main-nav {
    min-height: 48px;
-   width: auto;
-   /* center align the menu */
-   text-align: center;
+   position: fixed;
+   display:flex;
+   flex-direction: column;
+   width: 230px;
+   align-items: flex-end;
 }
+
 ul#main-nav li {
    position: relative;
    list-style: none;
