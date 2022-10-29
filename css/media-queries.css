@@ -92,15 +92,32 @@
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 12px 'opensans-bold', sans-serif;
-      background: transparent !important;
+      font: 40px 'opensans-bold', sans-serif;
+      background: white;
+      width: 100%;
       letter-spacing: 1.5px;
       width: auto;
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
    }
-   
+
+   #nav-wrap ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+   }
+
+   #nav-wrap ul li.current {
+      background-color: black;
+   }
+
+   #nav-wrap ul li.current a {
+      color: white !important;
+   }
+   /* 
+
    #nav-wrap > a {
 	   width: 48px;
 		height: 48px;
@@ -109,11 +126,9 @@
 		position: relative;
       border: none;
       float: right;
-
       font: 0/0 a;
       text-shadow: none;
       color: transparent;
-
       position: relative;
       top: 0px;
       right: 30px;
@@ -128,29 +143,31 @@
 		right: 25%;
 		content: '';
 	}
-   #nav-wrap > a:after { top: 60%; }
+
+   #nav-wrap > a:after { 
+      top: 60%; 
+   }
 
    /* toggle buttons */
-	#nav-wrap:not( :target ) > a:first-of-type,
+	/* #nav-wrap:not( :target ) > a:first-of-type,
 	#nav-wrap:target > a:last-of-type  {
 	   display: block;
-	}
+	} */
 
    /* hide menu panel */
-   #nav-wrap ul#main-nav {
+   /* #nav-wrap ul#main-nav {
       height: auto;
 		display: none;
       clear: both;
       width: auto;
       float: right;
-
       position: relative;
       top: 12px;
       right: 0;
-   }
+   } */
 
    /* display menu panels */
-	#nav-wrap:target > ul#nav	{
+	/* #nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 30px 20px 48px 20px;
       background: rgba(255, 255, 255, 0.927);
@@ -175,8 +192,8 @@
       padding: 0;
       margin: 12px 0;
       line-height: 16px; /* reset line-height from 48px */
-      border: none;
-   }
+      /* border: none;
+   }  */
 
 
    /* Header Styles

@@ -162,12 +162,13 @@ header .scrolldown a:hover { color: #464646; } */
 }
 
 /* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
+#nav-wrap > a.mobile-btn { 
+   display: none; 
+}
 
-ul#main-nav{
+ul#main-nav {
    min-height: 48px;
    width: auto;
-
    /* center align the menu */
    text-align: center;
 }
