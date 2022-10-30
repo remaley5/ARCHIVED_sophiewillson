@@ -58,6 +58,30 @@ header .banner-text h3 strong, header .banner-text h3 a {
   color: #21252e;
 }
 
+.social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 40px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  padding-top: 20px;
+}
+.social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+.social li a {
+  color: white;
+  background-color: #0e2359;
+  padding: 0.2em 0.5em;
+  border-radius: 50%;
+  box-shadow: 0 0 6px gray;
+}
+.social li a:hover {
+  color: #0e2359;
+  background-color: white;
+}
+
 #nav-wrap {
   font: 30px "opensans-bold", sans-serif;
   width: 100%;
