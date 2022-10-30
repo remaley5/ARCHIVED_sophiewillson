@@ -13,8 +13,8 @@
 - [ ] Margin-top to sections accomate new nav text size
 
 ### Content/ Markup
-- [ ] Appropriate Headings
-- [ ] 'Main' region
+- [x] Appropriate Headings
+- [x] 'Main' region
 
 ### Labels/ Context
 - [ ] PDF Download message
@@ -42,6 +42,7 @@
 ### Key Navigation
 - [ ] 'Skip to Main' button top of page
 - [ ] 'Skip to Nav' button on sections
+- [ ] Format 'skip to' buttons
 - [ ] Focus indicator
 
 
