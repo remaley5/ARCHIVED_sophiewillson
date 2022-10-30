@@ -1,46 +1,55 @@
 # Changes
 
 ## Content Changes
-1. About me
-2. Resume text
-3. Resume PDF
-4. Footer
+- [ ] About me
+- [ ] Resume text
+- [ ] Resume PDF
+- [ ] Footer
+- [ ] Blurb
 
 ## Accessibility Changes
 
-### Content
-1. Appropriate Headings
-2. Remove Blurb
-3. PDF Download Message
+### Formatting
+- [ ] Margin-top to sections accomate new nav text size
+
+### Content/ Markup
+- [ ] Appropriate Headings
+- [ ] 'Main' region
+
+### Labels/ Context
+- [ ] PDF Download message
+- [ ] Nav labels
+- [ ] Link icon labels
 
 
 ### Font Size
-1. h2
-3. Icon Links
-4. Icons
-5. Paragraph Text
-6. Font-weight
+- [ ] h2
+- [ ] Icon Links
+- [ ] Icons
+- [ ] Paragraph Text
+- [ ] Font-weight
+- [x] Navigation Menu - default view
+- [ ] Navigation Menu - Media Query
 
 ### Color 
-1. Navigation Menu Text
-2. Dialog text
-3. Grey/White - Resume, dialog
-4. Purple/White - About me
-5. Green/White - Navigation Menu 
-6. Download button
+- [ ] Navigation Menu Text
+- [ ] Dialog text
+- [ ] Grey/White - Resume, dialog
+- [ ] Purple/White - About me
+- [ ] Green/White - Navigation Menu 
+- [ ] Download button
 
 ### Key Navigation
-1. 'Skip to Main' button top of page
-2. 'Skip to Nav' button on sections
-3. Focus indicator
+- [ ] 'Skip to Main' button top of page
+- [ ] 'Skip to Nav' button on sections
+- [ ] Focus indicator
 
-### Media Queries
 
 #### Navigation Menu 
-1. Toggle button functionality
-2. Formatting
+- [ ] Toggle button functionality
+- [ ] Formatting
 
 ## Remove Redundant
-1. Blockquotes
-2. Headings
-3. Slider
+- [ ] Blockquotes
+- [ ] Headings
+- [ ] Slider
