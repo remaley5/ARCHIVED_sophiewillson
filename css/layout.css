@@ -10,6 +10,10 @@ hr {
 section {
   padding-top: 200px !important;
 }
+section > div {
+  width: 80%;
+  margin: auto;
+}
 
 header {
   position: relative;
@@ -174,7 +178,6 @@ ul#main-nav li.current a {
   overflow: hidden;
 }
 #about h2 {
-  font: 22px/30px "opensans-bold", sans-serif;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -303,37 +306,43 @@ ul#main-nav li.current a {
   background: #ffffff;
   padding-top: 90px;
   padding-bottom: 60px;
+  margin: auto;
 }
-#portfolio h1 {
-  font: 15px/24px "opensans-semibold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 48px;
-  color: #171717;
+#portfolio h2 {
+  color: #816a5d;
+  border-bottom: 5px solid #eaa572;
+  padding-bottom: 40px;
 }
 
 #portfolio-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  margin: auto;
 }
 #portfolio-wrapper .columns {
   width: 400px;
   margin-bottom: 36px;
+}
+#portfolio-wrapper h3 {
+  color: #0d2f59;
 }
 
 .portfolio-item .item-wrap {
   background: #fff;
   overflow: hidden;
   position: relative;
+  margin-top: 40px;
+  min-width: 200px;
+  max-width: 400px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 6px gray;
+  padding: 20px;
 }
 .portfolio-item .item-wrap a {
   display: block;
@@ -358,6 +367,16 @@ ul#main-nav li.current a {
   left: 50%;
   margin-left: -15px;
   margin-top: -15px;
+}
+.portfolio-item .item-wrap .portfolio-item-meta {
+  padding: 18px;
+}
+.portfolio-item .item-wrap .portfolio-item-meta p {
+  font: "opensans-bold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #282020;
+  padding-top: 20px;
 }
 
 .portfolio-item:hover .overlay {

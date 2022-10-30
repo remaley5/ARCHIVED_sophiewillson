@@ -64,15 +64,16 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 60px;
   line-height: 36px;
-  margin-bottom: 6px;
+  margin-bottom: 60px;
 }
 
 h3 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 40px;
+  line-height: 40px;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -308,35 +309,7 @@ label span, legend span {
 
 /* default
  * *---------------------------------------------------------------*/
-.row {
-  width: 96%;
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
-.row .row {
-  width: auto;
-  max-width: none;
-  margin: 0 -20px;
-}
-.row:before {
-  content: " ";
-  display: table;
-}
-.row:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
 /* row clearing */
-.column, .columns {
-  position: relative;
-  padding: 0 20px;
-  min-height: 1px;
-  float: left;
-}
-
 /* removed gutters */
 .row.collapsed > .column, .row.collapsed > .columns {
   padding: 0;
@@ -377,9 +350,6 @@ label span, legend span {
 }
 .row .eleven {
   width: 91.66667%;
-}
-.row .twelve {
-  width: 10;
 }
 
 /* mobile wide/smaller tablets

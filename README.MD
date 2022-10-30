@@ -15,6 +15,7 @@
 ### Content/ Markup
 - [x] Appropriate Headings
 - [x] 'Main' region
+- [ ] Image alts
 
 ### Labels/ Context
 - [ ] PDF Download message
