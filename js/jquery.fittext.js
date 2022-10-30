@@ -20,7 +20,7 @@
           'maxFontSize' : Number.POSITIVE_INFINITY
         }, options);
 
-    return this.each(function(){
+    return this.each(function() {
 
       // Store the object
       var $this = $(this);

@@ -154,11 +154,12 @@
                            <div class="portfolio-item-meta">
                               <h3>Boards</h3>
                               <p>Python, Flask, SQLAlchemy, React</p>
-                              <a href="#modal-01" role="button"><span>click to read more!</span></a>
                            </div>
                         </div>
-                        <img alt="" src="images/portfolio/moodboard.png">
-
+                        <button class="modal-trigger" href="#modal-01" title="" >
+                           <img alt="" src="images/portfolio/moodboard.png">
+                           <span class="overlay">read more </br> about </br> 'Boards'</span>
+                        </button>
                      </div>
                   </div> <!-- item end -->
 
@@ -169,48 +170,70 @@
                            <div class="portfolio-item-meta">
                               <h3>Packstreet</h3>
                               <p>Express.js, Sequelize, React/Redux</p>
-                              <a href="#modal-02" role="button"><span>click to read more!</span></a>
                            </div>
                         </div>
-                        <img alt="" src="images/portfolio/packstreet.png">
 
+                        <button class="modal-trigger" href="#modal-02" title="" >
+                           <img alt="" src="images/portfolio/packstreet.png">
+                           <span class="overlay">Read more </br> about </br> 'Packstreet'</span>
+                        </button>
                      </div>
                   </div> <!-- item end -->
 
-                  <div class="portfolio-item">
+                  <!-- <div class="portfolio-item">
                      <div class="item-wrap">
                         <div class="">
                            <div class="portfolio-item-meta">
                               <h3>Badreads</h3>
                               <p>Express.js, Sequelize, Pug</p>
-                              <a href="#modal-03" role="button"><span>click to read more!</span></a>
                            </div>
                         </div>
 
                         <a href="#modal-03" title="" role="button">
                            <img alt="" src="images/portfolio/badreads.jpeg">
-                           <span class="overlay">click to read more!</span>
+                           <span class="overlay">Read more about 'Badreads'</span>
                         </a>
 
                      </div>
-                  </div> <!-- item end -->
+                  </div> --> <!-- item end -->
 
             <!-- Modal Popup
             --------------------------------------------------------------- -->
+            <div class="mfp-bg mfp-fade mfp-ready hidden" style="height: 4073px; position: absolute;"></div>
+            <div class="mfp-wrap mfp-auto-cursor mfp-fade mfp-ready hidden" tabindex="-1" style="top: 2029.38px; position: absolute; height: 386px;">
+               <div class="mfp-container mfp-s-ready mfp-inline-holder"><div class="mfp-content"><div id="modal-01" class="popup-modal">
+
+            
+                  <div class="link-box">
+                     <button class="popup-modal-dismiss">Close</button>
+                     <a href="https://board-notes.herokuapp.com/landing" target="_blank">Live link</a>
+                  </div>
+                  <div class="image-wrap">
+                     <img class="scale-with-grid" src="images/portfolio/moodboard.png" alt="">
+                  </div>
+                  <div class="description-box">
+                     <h2 id="modal-01-title">Boards</h2>
+                     <p>Solo built fullstack app with a SQLAlchemy database, Flask backend andReact/Halka frontend. Boards is an intuitive note taking app, by my design, that allows users to create visual notes with drag and drop functionality. The intuitive dragging and resizing is implemented with the react-konva library to implement the HTML5 canvas element. Photo uploading is implemented with AWS and text styling is a custom built toolbox from pure CSS and Javascript.</p>
+                     <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+                  </div>
+   
+                  </div></div>
+                  <div class="mfp-preloader">Loading...</div>
+               </div>
+         </div>
 
             <div id="modal-01" class="popup-modal mfp-hide">
-
-               <img class="scale-with-grid" src="images/portfolio/moodboard.png" alt="" />
-
-               <div class="description-box">
-                  <h3>Boards</h3>
-                  <p>Solo built fullstack app with a SQLAlchemy database, Flask backend andReact/Halka frontend. Boards is an intuitive note taking app, by my design, that allows users to create visual notes with drag and drop functionality. The intuitive dragging and resizing is implemented with the react-konva library to implement the HTML5 canvas element. Photo uploading is implemented with AWS and text styling is a custom built toolbox from pure CSS and Javascript.</p>
-                  <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-               </div>
-
                <div class="link-box">
                   <a href="https://board-notes.herokuapp.com/landing" target="_blank">Live link</a>
                   <a class="popup-modal-dismiss">Close</a>
+               </div>
+               <div class="image-wrap">
+                  <img class="scale-with-grid" src="images/portfolio/moodboard.png" alt="" />
+               </div>
+               <div class="description-box">
+                  <h2 id="modal-01-title">Boards</h2>
+                  <p>Solo built fullstack app with a SQLAlchemy database, Flask backend andReact/Halka frontend. Boards is an intuitive note taking app, by my design, that allows users to create visual notes with drag and drop functionality. The intuitive dragging and resizing is implemented with the react-konva library to implement the HTML5 canvas element. Photo uploading is implemented with AWS and text styling is a custom built toolbox from pure CSS and Javascript.</p>
+                  <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
                </div>
 
             </div><!-- modal-01 End -->
@@ -247,7 +270,7 @@
                   <a class="popup-modal-dismiss">Close</a>
                </div>
 
-            </div><!-- modal-03 End -->
+            </div>
 
             <div id="modal-04" class="popup-modal mfp-hide">
 
@@ -453,10 +476,6 @@
                <li><a href="https://github.com/remaley5"><i class="fa fa-github"></i></a></li>
             </ul>
 
-            <ul class="copyright">
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
-            </ul>
-
          </div>
 
          <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
@@ -474,8 +493,9 @@
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
+   <!-- <script src="js/magnific-popup.js"></script> -->
    <script src="js/init.js"></script>
+   <script src="popup.js"></script>
 
 </body>
 

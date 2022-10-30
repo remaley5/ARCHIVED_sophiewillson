@@ -110,7 +110,7 @@ header
   .scrolldown 
     a:hover  
       color: #464646 
-    a 
+    a
       position: absolute
       bottom: 30px
       left: 50%
@@ -148,7 +148,7 @@ header
   background-color: rgba(255, 255, 255, 0.891)
   z-index: 1000
 
-  ul, li, a 
+  ul, li, a, button
     margin: 0
     padding: 0
     border: none
@@ -397,7 +397,6 @@ ul#main-nav li.current a
 // Portfolio Content
 #portfolio-wrapper 
   display: flex
-  justify-content: space-between
   flex-wrap: wrap
   gap: 30px
   margin: auto
@@ -423,30 +422,12 @@ ul#main-nav li.current a
     -o-transition: all 0.3s ease-in-out
     -ms-transition: all 0.3s ease-in-out
     transition: all 0.3s ease-in-out
-    box-shadow: 0 0 6px gray
     padding: 20px
-
-    /**
-      * background: #fff
-      * overflow: hidden
-      *  position: relative
-      * -webkit-transition: all 0.3s ease-in-out
-      * -moz-transition: all 0.3s ease-in-out
-      * -o-transition: all 0.3s ease-in-out
-      * -ms-transition: all 0.3s ease-in-out
-      * transition: all 0.3s ease-in-out
-      * box-shadow: 0 0 6px gray 
-      */
 
     img
       vertical-align: bottom
       postion: relative
       width: 100%
-
-    a
-      display: block
-      cursor: pointer
-
 
     .link-icon
       display: block
@@ -466,34 +447,11 @@ ul#main-nav li.current a
       margin-left: -15px
       margin-top: -15px
 
-    .portfolio-item-meta 
-      padding: 18px
-
-      p 
-        font: "opensans-bold", sans-serif
-        font-size: 20px
-        margin-bottom: 0
-        color: #282020
-        padding-top: 20px
-
-// on hover
-
-.portfolio-item
-  a 
-    position: absolute
-    width: fit-content
-    height: fit-content
-    text-align: center
-    vertical-align: baseline
-    img 
-      transition: .5s ease
-      vertical-align: bottom
     .overlay
       position: absolute
-      left: 0
-      top: 0
-      width: 100%
-      height: 100%
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
       opacity: 0
       -moz-opacity: 0
       filter: alpha(opacity=0)
@@ -501,16 +459,49 @@ ul#main-nav li.current a
       -moz-transition: opacity 0.3s ease-in-out
       -o-transition: opacity 0.3s ease-in-out
       transition: opacity 0.3s ease-in-out
-      background: url(../images/overlay-bg.png) repeat
+      font-size: 40px
+      text-transform: uppercase
+      line-height: 50px
+      width: 100%
+      text-shadow: 0 0 1px grey
+      color: #816a5d
+      font: "opensans-bold", sans-serif
+      padding: 30px
+
+    .portfolio-item-meta 
+      padding: 18px
+
+      p
+        font: "opensans-bold", sans-serif
+        font-size: 20px
+        margin-bottom: 0
+        color: #282020
+        padding-top: 20px
+    button
+      display: block
+      cursor: pointer
+      position: relative
+      width: fit-content
+      height: fit-content
+      text-align: center
+      vertical-align: baseline
+    img 
+      transition: .5s ease
+      vertical-align: bottom
 
 
-.portfolio-item:hover 
+
+  // Hover
+.portfolio-item button:hover, .portfolio-item button:focus
+  box-shadow: 0 0 6px #0d2f59
+  //border: 2px solid #eaa572
+
   .overlay 
     opacity: 1
     -moz-opacity: 1
     filter: alpha(opacity=100)
 
-  a img 
+  img 
     opacity: 10%
 
   .link-icon 
