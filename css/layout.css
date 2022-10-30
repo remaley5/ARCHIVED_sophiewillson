@@ -428,6 +428,7 @@ ul#main-nav li.current a {
 }
 
 .popup-modal {
+  position: fixed;
   max-width: 550px;
   background: #fff;
   position: relative;
@@ -524,7 +525,13 @@ ul#main-nav li.current a {
   margin-left: 24px;
 }
 
-.mfp-fade.mfp-wrap .mfp-content .popup-modal {
+.popup-modal-wrap {
+  position: fixed !important;
+  top: 20% !important;
+  background: none !important;
+}
+
+.mfp-fade.popup-modal-wrap .mfp-content .popup-modal {
   opacity: 0;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
@@ -533,11 +540,11 @@ ul#main-nav li.current a {
   transition: all 200ms ease-in-out;
 }
 
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
+.mfp-fade.popup-modal-wrap.mfp-ready .mfp-content .popup-modal {
   opacity: 1;
 }
 
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
+.mfp-fade.popup-modal-wrap.mfp-removing .mfp-content .popup-modal {
   opacity: 0;
 }
 
