@@ -425,18 +425,14 @@ ul#main-nav li.current a
     transition: all 0.3s ease-in-out
     box-shadow: 0 0 6px gray
     padding: 20px
-
-    a
-      display: block
-      padding: 10px
-      background-color: pink
-      border: 2px solid gray
-      border-radius: 30px
-      box-shadow: 0 0 6px gray
-      margin-top: 10px
     
     img
       vertical-align: bottom
+      postion: relative
+      width: 100%
+
+    a
+      position: relative
 
 
     .link-icon
@@ -469,11 +465,39 @@ ul#main-nav li.current a
 
 // on hover
 
+.portfolio-item
+  a 
+    position: absolute
+    width: fit-content
+    height: fit-content
+    text-align: center
+    vertical-align: baseline
+    img 
+      transition: .5s ease
+    .overlay
+      transition: .5s ease
+      position: relative
+      display: block
+      bottom: 235px
+      font-weight: bold
+      font-size: 30px
+      opacity: 0
+      height: 230px
+      display: flex
+      align-items: center
+      justify-content: center
+      box-shadow: 0 0 10px 0 gray inset
+      box-shadow: 0 0 10px 0 gray
+      text-align: center
+
 .portfolio-item:hover 
   .overlay 
     opacity: 1
     -moz-opacity: 1
     filter: alpha(opacity=100)
+
+  a img 
+    opacity: 10%
 
   .link-icon 
     opacity: 1
