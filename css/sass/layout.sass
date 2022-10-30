@@ -529,14 +529,63 @@ ul#main-nav li.current a
   a:hover
     color: #5b6363
 
-  a.popup-modal-dismiss 
-    margin-left: 24px
+// popup modal
+.popup-modal
+  max-width: 550px
+  background: #fff
+  position: relative
+  margin: 0 auto
+
+  .description-box
+    padding: 12px 36px 18px 36px
+    border-top: 1px solid gray
+
+    h4
+      font: 15px/24px 'opensans-bold', sans-serif
+      margin-bottom: 12px
+      color: #111
+
+    p
+      font: 14px/24px 'opensans-regular', sans-serif
+      color: #A1A1A1
+      margin-bottom: 12px
+
+    .categories
+      font: 11px/21px 'opensans-light', sans-serif
+      color: #A1A1A1
+      text-transform: uppercase
+      letter-spacing: 2px
+      display: block
+      text-align: left
+
+      i
+        margin-right: 8px
+
+  .link-box
+    padding: 18px 36px
+    background: #eaa572
+    text-align: left
+
+    a
+      color: #fff
+      font: 11px/21px 'opensans-bold', sans-serif
+      text-transform: uppercase
+      letter-spacing: 3px
+      cursor: pointer
+
+    a:hover
+      color: #5b6363
+
+    a.popup-modal-dismiss 
+      margin-left: 24px
+
+
 
 // fadein/fadeout effect for modal popup
 // ------------------------------------------------------------------
-// content at start
 
-.mfp-fade.mfp-wrap .mfp-content .popup-modal 
+// content at start
+.mfp-fade.mfp-wrap .mfp-content .popup-modal
   opacity: 0
   -webkit-transition: all 200ms ease-in-out
   -moz-transition: all 200ms ease-in-out
@@ -545,13 +594,14 @@ ul#main-nav li.current a
   transition: all 200ms ease-in-out
 
 // content fadein
-.mfp-fade.mfp-wrap
-  .mfp-ready .mfp-content .popup-modal 
-    opacity: 1
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal
+  opacity: 1
 
 // content fadeout
-  .mfp-removing .mfp-content .popup-modal 
-    opacity: 0
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal
+  opacity: 0
+
+
 
 // ------------------------------------------------------------------
 // h. Contact Section
