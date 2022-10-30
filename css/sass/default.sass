@@ -28,55 +28,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
   display: block
-
-audio, canvas, video
-  display: inline-block
-
-audio:not([controls])
-  display: none
-  height: 0
-
-[hidden]
-  display: none
-
-code, kbd, pre, samp
-  font-family: monospace, serif
-  font-size: 1em
-
-pre
-  white-space: pre
-  white-space: pre-wrap
-  word-wrap: break-word
-
-blockquote
-  &:before, &:after
-    content: ''
-    content: none
-
-q
-  &:before, &:after
-    content: ''
-    content: none
-
-ins
-  background-color: #ff9
-  color: #000
-  text-decoration: none
-
-mark
-  background-color: #A7F4F6
-  color: #555
-
-del
-  text-decoration: line-through
-
-abbr[title], dfn[title]
-  border-bottom: 1px dotted
-  cursor: help
-
-table
-  border-collapse: collapse
-  border-spacing: 0
+  
 
 // ------------------------------------------------------------------
 //Default and Basic Styles 
@@ -104,7 +56,6 @@ body
   -webkit-text-size-adjust: 100% 
 
 // 2. Typography 
-       //Vertical rhythm with leading derived from 6
 //---------------------------------------------------------------------
 
 h1, h2, h3, h4, h5, h6
@@ -185,18 +136,12 @@ p a
 
 /*  4. List  ---------------------------------------------------------*/
 
-ul, ol
+ul
   margin-bottom: 24px
   margin-top: 12px
-
-ul
   list-style: none outside
+  margin: 6px 0 6px 30px
 
-ol
-  list-style: decimal
-  margin-left: 30px
-
-ul
   &.square, &.circle, &.disc
     margin-left: 30px
 
@@ -209,75 +154,10 @@ ul
   &.disc
     list-style: disc outside
 
-  ul, ol
-    margin: 6px 0 6px 30px
-
-ol
-  ol, ul
-    margin: 6px 0 6px 30px
-
-ul
-  ul li, ol li
+  li
     margin-bottom: 6px
-
-ol
-  ol li, ul li
-    margin-bottom: 6px
-
-li
-  line-height: 18px
-  margin-bottom: 12px
-
-
-/* Pagination */
-
-.pagination
-  margin: 36px auto
-  text-align: center
-
-  ul li
-    display: inline-block
-    margin: 0
-    padding: 0
-
-  .page-numbers
-    font: 15px/18px 'opensans-bold', sans-serif
-    display: inline-block
-    padding: 6px 10px
-    margin-right: 3px
-    margin-bottom: 6px
-    color: #6E757C
-    background-color: #E6E8EB
-    -webkit-transition: all 200ms ease-in-out
-    -moz-transition: all 200ms ease-in-out
-    -o-transition: all 200ms ease-in-out
-    -ms-transition: all 200ms ease-in-out
-    transition: all 200ms ease-in-out
-    -moz-border-radius: 3px
-    -webkit-border-radius: 3px
-    -khtml-border-radius: 3px
-    border-radius: 3px
-
-    &:hover
-      background: #838A91
-      color: #fff
-
-  .current
-    background-color: #11ABB0
-    color: #fff
-
-    &:hover
-      background-color: #11ABB0
-      color: #fff
-
-  .inactive
-    background-color: #E6E8EB
-    color: #A9ADB2
-
-    &:hover
-      background-color: #E6E8EB
-      color: #A9ADB2
-
+    line-height: 18px
+    margin-bottom: 12px
 
 /* 5. Images  ---------------------------------------------------------*/
 
@@ -285,57 +165,7 @@ img
   max-width: 100%
   height: auto
 
-  &.pull-right
-    margin: 12px 0px 0px 18px
-
-  &.pull-left
-    margin: 12px 18px 0px 0px
-
 /*  6. Buttons  ---------------------------------------------------------*/
-
-.button
-  font: 16px/30px 'opensans-bold', sans-serif
-  background: #11ABB0
-  display: inline-block
-  text-decoration: none
-  letter-spacing: 0
-  color: #fff
-  padding: 12px 20px
-  margin-bottom: 18px
-  border: none
-  cursor: pointer
-  height: auto
-  -webkit-transition: all .2s ease-in-out
-  -moz-transition: all .2s ease-in-out
-  -o-transition: all .2s ease-in-out
-  -ms-transition: all .2s ease-in-out
-  transition: all .2s ease-in-out
-  -moz-border-radius: 3px
-  -webkit-border-radius: 3px
-  -khtml-border-radius: 3px
-  border-radius: 3px
-
-  &:visited
-    font: 16px/30px 'opensans-bold', sans-serif
-    background: #11ABB0
-    display: inline-block
-    text-decoration: none
-    letter-spacing: 0
-    color: #fff
-    padding: 12px 20px
-    margin-bottom: 18px
-    border: none
-    cursor: pointer
-    height: auto
-    -webkit-transition: all .2s ease-in-out
-    -moz-transition: all .2s ease-in-out
-    -o-transition: all .2s ease-in-out
-    -ms-transition: all .2s ease-in-out
-    transition: all .2s ease-in-out
-    -moz-border-radius: 3px
-    -webkit-border-radius: 3px
-    -khtml-border-radius: 3px
-    border-radius: 3px
 
 button
   font: 16px/30px 'opensans-bold', sans-serif
@@ -382,49 +212,19 @@ input
     -khtml-border-radius: 3px
     border-radius: 3px
 
-.button:hover, button:hover
-  background: #3d4145
-  color: #fff
-
-input
   &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
     background: #3d4145
     color: #fff
 
-.button:active, button:active
-  background: #3d4145
-  color: #fff
-
-input
   &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
     background: #3d4145
     color: #fff
 
-.button.full-width, button.full-width
-  width: 100%
-  padding-left: 0 !important
-  padding-right: 0 !important
-  text-align: center
-
-input
   &[type="submit"].full-width, &[type="reset"].full-width, &[type="button"].full-width
     width: 100%
     padding-left: 0 !important
     padding-right: 0 !important
     text-align: center
-
-/* Fix for odd Mozilla border & padding issues*/
-
-button::-moz-focus-inner, input::-moz-focus-inner
-  border: 0
-  padding: 0
-
-/*  7. Forms  ---------------------------------------------------------*/
-
-form, fieldset
-  margin-bottom: 24px
-
-input
   &[type="text"], &[type="password"], &[type="email"]
     display: block
     padding: 18px 15px
@@ -438,6 +238,36 @@ input
     line-height: 24px
     color: #647373
     background: #D3D9D9
+  &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus
+    color: #B3B7BC
+    background-color: #3d4145
+
+
+button:hover
+  background: #3d4145
+  color: #fff
+
+.button:active, button:active
+  background: #3d4145
+  color: #fff
+
+.button.full-width, button.full-width
+  width: 100%
+  padding-left: 0 !important
+  padding-right: 0 !important
+  text-align: center
+
+/* Fix for odd Mozilla border & padding issues*/
+
+button::-moz-focus-inner, input::-moz-focus-inner
+  border: 0
+  padding: 0
+
+/*  7. Forms  ---------------------------------------------------------*/
+
+form, fieldset
+  margin-bottom: 24px
+
 
 textarea, select
   display: block
@@ -458,11 +288,6 @@ textarea, select
  * }
  */
 
-input
-  &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus
-    color: #B3B7BC
-    background-color: #3d4145
-
 textarea
   &:focus
     color: #B3B7BC
@@ -480,14 +305,6 @@ label span, legend span
   color: #8B9798
   font: 14px/24px 'opensans-regular', sans-serif
 
-input
-  &[type="checkbox"], &[type="radio"]
-    font-size: 15px
-    color: #737373
-
-  &[type="checkbox"]
-    display: inline
-
 
 /* default
  *---------------------------------------------------------------*/
@@ -496,14 +313,6 @@ input
   width: 96%
   max-width: 1020px
   margin: 0 auto
-
-/* fixed width for IE8 */
-
-.ie .row
-  width: 1000px
-
-.narrow .row
-  max-width: 980px
 
 .row
   .row
@@ -527,10 +336,6 @@ input
   padding: 0 20px
   min-height: 1px
   float: left
-
-.column.centered, .columns.centered
-  float: none
-  margin: 0 auto
 
 /* removed gutters */
 
@@ -563,11 +368,11 @@ input
   .five
     width: 41.66667%
 
-  .six
-    width: 50%
+  //.six
+    //width: 50%
 
-  .seven
-    width: 58.33333%
+  //.seven
+    //width: 58.33333%
 
   .eight
     width: 66.66667%
@@ -582,168 +387,8 @@ input
     width: 91.66667%
 
   .twelve
-    width: 100%
-
-  .offset-1
-    margin-left: 8.33333%
-
-  .offset-2
-    margin-left: 16.66667%
-
-  .offset-3
-    margin-left: 25%
-
-  .offset-4
-    margin-left: 33.33333%
-
-  .offset-5
-    margin-left: 41.66667%
-
-  .offset-6
-    margin-left: 50%
-
-  .offset-7
-    margin-left: 58.33333%
-
-  .offset-8
-    margin-left: 66.66667%
-
-  .offset-9
-    margin-left: 75%
-
-  .offset-10
-    margin-left: 83.33333%
-
-  .offset-11
-    margin-left: 91.66667%
-
-  .push-1
-    left: 8.33333%
-
-  .pull-1
-    right: 8.33333%
-
-  .push-2
-    left: 16.66667%
-
-  .pull-2
-    right: 16.66667%
-
-  .push-3
-    left: 25%
-
-  .pull-3
-    right: 25%
-
-  .push-4
-    left: 33.33333%
-
-  .pull-4
-    right: 33.33333%
-
-  .push-5
-    left: 41.66667%
-
-  .pull-5
-    right: 41.66667%
-
-  .push-6
-    left: 50%
-
-  .pull-6
-    right: 50%
-
-  .push-7
-    left: 58.33333%
-
-  .pull-7
-    right: 58.33333%
-
-  .push-8
-    left: 66.66667%
-
-  .pull-8
-    right: 66.66667%
-
-  .push-9
-    left: 75%
-
-  .pull-9
-    right: 75%
-
-  .push-10
-    left: 83.33333%
-
-  .pull-10
-    right: 83.33333%
-
-  .push-11
-    left: 91.66667%
-
-  .pull-11
-    right: 91.66667%
-
-/* Offsets
-
- Push/Pull
-
-// block grids
-// *---------------------------------------------------------------------
-
-.bgrid-sixths [class*="column"]
-  width: 16.66667%
-
-.bgrid-quarters [class*="column"]
-  width: 25%
-
-.bgrid-thirds [class*="column"]
-  width: 33.33333%
-
-.bgrid-halves [class*="column"]
-  width: 50%
-
-[class*="bgrid"] [class*="column"] + [class*="column"]:last-child
-  float: left
-
-/* Left clearing for block grid columns - columns that changes width in
- *different screen sizes. Allows columns with different heights to align
- *properly.
- *---------------------------------------------------------------------*/
-
-.first
-  clear: left
-
-/* first column in default screen*/
-
-.s-first
-  clear: none
-
-/* first column in smaller screens*/
-
-/* smaller screens
- *---------------------------------------------------------------*/
-@media only screen and (max-width: 900px)
-  /* block grids on small screens*/
-
-  .s-bgrid-sixths [class*="column"]
-    width: 16.66667%
-
-  .s-bgrid-quarters [class*="column"]
-    width: 25%
-
-  .s-bgrid-thirds [class*="column"]
-    width: 33.33333%
-
-  .s-bgrid-halves [class*="column"]
-    width: 50%
-
-  /* block grids left clearing*/
-
-  .first
-    clear: none
-
-  .s-first
-    clear: left
+    width: 10
+    
 
 /* mobile wide/smaller tablets
  *---------------------------------------------------------------*/
