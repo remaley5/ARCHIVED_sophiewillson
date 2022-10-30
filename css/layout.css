@@ -346,6 +346,12 @@ ul#main-nav li.current a {
 }
 .portfolio-item .item-wrap a {
   display: block;
+  padding: 10px;
+  background-color: pink;
+  border: 2px solid gray;
+  border-radius: 30px;
+  box-shadow: 0 0 6px gray;
+  margin-top: 10px;
 }
 .portfolio-item .item-wrap img {
   vertical-align: bottom;
