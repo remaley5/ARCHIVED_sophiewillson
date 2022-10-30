@@ -10,7 +10,7 @@
 ## Accessibility Changes
 
 ### Formatting
-- [ ] Margin-top to sections accomate new nav text size
+- [x] Margin-top to sections accomate new nav text size
 
 ### Content/ Markup
 - [x] Appropriate Headings
@@ -51,6 +51,6 @@
 - [ ] Formatting
 
 ## Remove Redundant
-- [ ] Blockquotes
-- [ ] Headings
+- [x] Blockquotes
+- [x] Headings
 - [ ] Slider

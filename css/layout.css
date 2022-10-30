@@ -7,6 +7,10 @@ hr {
   display: none;
 }
 
+section {
+  padding-top: 200px !important;
+}
+
 header {
   position: relative;
   height: 800px;
