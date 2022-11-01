@@ -527,7 +527,6 @@ ul#main-nav li.current a {
 
 .popup-modal-wrap {
   position: fixed !important;
-  top: 20% !important;
   background: none !important;
 }
 

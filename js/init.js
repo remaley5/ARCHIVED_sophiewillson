@@ -56,7 +56,6 @@ jQuery(document).ready(function($) {
 
 		},
 		offset: '35%'
-
 	});
 
 
@@ -102,6 +101,8 @@ jQuery(document).ready(function($) {
 /*	Modal Popup
 ------------------------------------------------------*/
 
+   $('button.modal-trigger').popupTrigger();
+
    //  $('.item-wrap a').magnificPopup({
 
    //     type:'inline',
@@ -112,10 +113,10 @@ jQuery(document).ready(function($) {
 
    //  });
 
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-    		e.preventDefault();
-    		$.magnificPopup.close();
-    });
+   //  $(document).on('click', '.popup-modal-dismiss', function (e) {
+   //  		e.preventDefault();
+   //  		$.magnificPopup.close();
+   //  });
 
 
 
